@@ -1,5 +1,5 @@
 var GoogleAuth, zE;
-const zUrl = "https://wormateserkanconnect.github.io/new2";
+const zUrl = "https://ii7modysmp-hue.github.io/mywormtest";
 function _typeof(_0x4d0ax4) {
     return (_typeof = 'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator ? function (_0x4d0ax4) {
         return typeof _0x4d0ax4
