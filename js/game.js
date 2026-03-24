@@ -8639,100 +8639,179 @@ isValidHotkey = function (_0x310d64) {
   }
 };
     
-(function() {
+(function () {
     const confettiURL = "https://wormate.io/images/confetti-xmas2022.png";
     const targetId = "game-cont";
     const bgLayerId = "game-wandering-confetti";
-    
+    const styleId = "confetti-wander-style";
+
     const gameCont = document.getElementById(targetId);
     if (!gameCont) return;
 
-    // Kapsayıcı ayarları
-    if (getComputedStyle(gameCont).position === "static") gameCont.style.position = "relative";
+    // تجهيز الحاوية الأساسية بدون تخريب النظام القديم
+    const gameContStyle = getComputedStyle(gameCont);
+    if (gameContStyle.position === "static") {
+        gameCont.style.position = "relative";
+    }
     gameCont.style.overflow = "hidden";
 
+    // إنشاء أو جلب طبقة الخلفية
     let bgLayer = document.getElementById(bgLayerId);
     if (!bgLayer) {
         bgLayer = document.createElement("div");
         bgLayer.id = bgLayerId;
-        bgLayer.style.cssText = `
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: 0; pointer-events: none;
-            background: radial-gradient(circle at center, #3a5874 0%, #557e66 35%, #3a2b23 70%, #0e0f18 100%);
-        `;
+        bgLayer.style.cssText = [
+            "position:absolute",
+            "top:0",
+            "left:0",
+            "width:100%",
+            "height:100%",
+            "z-index:0",
+            "pointer-events:none",
+            "overflow:hidden",
+            "background: radial-gradient(circle at center, #3a5874 0%, #557e66 35%, #3a2b23 70%, #0e0f18 100%)"
+        ].join(";");
+
         gameCont.prepend(bgLayer);
+    } else {
+        // تنظيف العناصر القديمة حتى لا تتكرر إذا اشتغلت الدالة مرة ثانية
+        bgLayer.innerHTML = "";
+        bgLayer.style.background = "radial-gradient(circle at center, #3a5874 0%, #557e66 35%, #3a2b23 70%, #0e0f18 100%)";
     }
 
-    // Gezinme (Wandering) Animasyonu
-    if (!document.getElementById("confetti-wander-style")) {
+    // إضافة CSS مرة واحدة فقط
+    if (!document.getElementById(styleId)) {
         const style = document.createElement("style");
-        style.id = "confetti-wander-style";
+        style.id = styleId;
         style.textContent = `
-            .wander-item {
+            #${bgLayerId} .wander-item {
                 position: absolute;
-                background-image: url('${confettiURL}');
-                background-size: contain;
-                background-repeat: no-repeat;
+                left: 0;
+                top: 0;
                 will-change: transform;
-                opacity: 0.8;
-                animation: wanderAround linear infinite alternate;
+                pointer-events: none;
+                animation-name: wanderMove;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
             }
 
-            @keyframes wanderAround {
-                0% { transform: translate(0, 0) rotate(0deg); }
-                25% { transform: translate(50px, -100px) rotate(90deg); }
-                50% { transform: translate(-30px, -200px) rotate(180deg); }
-                75% { transform: translate(40px, -350px) rotate(270deg); }
-                100% { transform: translate(0, -500px) rotate(360deg); }
+            #${bgLayerId} .wander-sprite {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url('${confettiURL}');
+                will-change: transform, opacity;
+                pointer-events: none;
+                animation-name: wanderSpin;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                transform-origin: center center;
+            }
+
+            @keyframes wanderMove {
+                0% {
+                    transform: translate3d(0, 0, 0);
+                }
+                25% {
+                    transform: translate3d(50px, -100px, 0);
+                }
+                50% {
+                    transform: translate3d(-30px, -220px, 0);
+                }
+                75% {
+                    transform: translate3d(40px, -360px, 0);
+                }
+                100% {
+                    transform: translate3d(0, -520px, 0);
+                }
+            }
+
+            @keyframes wanderSpin {
+                0% {
+                    transform: rotate(0deg) scale(1);
+                    opacity: 0.75;
+                }
+                25% {
+                    transform: rotate(90deg) scale(1.05);
+                    opacity: 0.9;
+                }
+                50% {
+                    transform: rotate(180deg) scale(0.95);
+                    opacity: 0.8;
+                }
+                75% {
+                    transform: rotate(270deg) scale(1.08);
+                    opacity: 0.9;
+                }
+                100% {
+                    transform: rotate(360deg) scale(1);
+                    opacity: 0.7;
+                }
             }
         `;
         document.head.appendChild(style);
     }
 
-    // 16 farklı sprite frame oluştur (128x128'lik dilimler)
-    // Sprite sheet 128x128'lik 4x4 grid (toplam 16 frame)
+    // إعدادات السبرايت شيت
     const frames = 16;
     const spriteSize = 128;
-    const cols = 4; // 4 sütun
-    const rows = 4; // 4 satır
-    
+    const cols = 4;
+    const rows = 4;
+
+    // عدد العناصر
     const count = 40;
+
     for (let i = 0; i < count; i++) {
         const conf = document.createElement("div");
         conf.className = "wander-item";
-        
-        // Rastgele bir frame seç (0-15 arası)
+
+        const sprite = document.createElement("div");
+        sprite.className = "wander-sprite";
+
+        // اختيار إطار عشوائي من السبرايت شيت
         const frameIndex = Math.floor(Math.random() * frames);
         const col = frameIndex % cols;
         const row = Math.floor(frameIndex / cols);
         const xOffset = col * spriteSize;
         const yOffset = row * spriteSize;
-        
-        // Boyutlandırma (Orta ve Büyük)
-        const size = Math.random() * 30 + 25; // 25px - 55px
-        
+
+        // حجم العنصر
+        const size = Math.random() * 30 + 25; // 25 - 55
         conf.style.width = size + "px";
         conf.style.height = size + "px";
-        conf.style.backgroundImage = `url('${confettiURL}')`;
-        conf.style.backgroundSize = `${spriteSize * cols}px ${spriteSize * rows}px`;
-        conf.style.backgroundPosition = `-${xOffset}px -${yOffset}px`;
-        conf.style.backgroundRepeat = "no-repeat";
-        
-        // Rastgele başlangıç pozisyonu (Alt tarafa yayılmış)
+
+        // موقع أولي عشوائي
         conf.style.left = Math.random() * 100 + "%";
-        conf.style.top = (Math.random() * 100 + 100) + "%"; 
-        
-        // Hız ve Gezinme Genişliği
-        const duration = Math.random() * 10 + 15; // 15-25 saniye (yavaş ve akıcı)
-        const delay = Math.random() * -20; // Animasyonun farklı yerlerden başlaması için
-        
-        conf.style.animationDuration = duration + "s";
+        conf.style.top = (Math.random() * 100 + 100) + "%";
+
+        // مدة وسرعة ودلاي
+        const moveDuration = Math.random() * 10 + 15;   // 15 - 25s
+        const spinDuration = Math.random() * 6 + 6;     // 6 - 12s
+        const delay = Math.random() * -25;
+
+        conf.style.animationDuration = moveDuration + "s";
         conf.style.animationDelay = delay + "s";
-        
-        // Hafif farklı gezinme varyasyonları için her birine rastgele scale ekleyelim
-        conf.style.transform = `scale(${Math.random() * 0.5 + 0.5})`;
-        
+
+        sprite.style.animationDuration = spinDuration + "s";
+        sprite.style.animationDelay = delay + "s";
+
+        // Scale ثابتة لكل عنصر بدون ما تنكسر من الأنيميشن
+        const scale = Math.random() * 0.5 + 0.5;
+        sprite.style.width = "100%";
+        sprite.style.height = "100%";
+        sprite.style.backgroundSize = `${spriteSize * cols}px ${spriteSize * rows}px`;
+        sprite.style.backgroundPosition = `-${xOffset}px -${yOffset}px`;
+        sprite.style.transform = `scale(${scale})`;
+
+        // حتى ما ينلغي scale بسبب الأنيميشن، نخليه على wrapper داخلي إضافي
+        const scaleWrap = document.createElement("div");
+        scaleWrap.style.width = "100%";
+        scaleWrap.style.height = "100%";
+        scaleWrap.style.transform = `scale(${scale})`;
+        scaleWrap.style.transformOrigin = "center center";
+        scaleWrap.appendChild(sprite);
+
+        conf.appendChild(scaleWrap);
         bgLayer.appendChild(conf);
     }
 })();
