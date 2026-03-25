@@ -7649,44 +7649,52 @@ window.addEventListener("load", function () {
 if (!document.getElementById("custom-btn-style")) {
   $("head").append(`
     <style id="custom-btn-style">
+      
+      .btn-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 8px;
+      }
+
       .fullscreen_button,
       .fullscreen_respawn {
+        flex: 1;
         color: #fff;
         border: none;
         padding: 10px;
-        border-radius: 8px;
+        border-radius: 10px;
         font-weight: bold;
         cursor: pointer;
         transition: 0.2s;
+        font-size: 13px;
       }
 
+      /* زر ازرق */
       .fullscreen_button {
-        background: #2196F3;
+        background: linear-gradient(135deg, #2196F3, #0D47A1);
       }
       .fullscreen_button:hover {
-        background: #1976D2;
-        transform: scale(1.05);
+        transform: scale(1.06);
+        box-shadow: 0 0 10px rgba(33,150,243,0.7);
       }
 
+      /* زر اصفر */
       .fullscreen_respawn {
-        background: #4CAF50;
+        background: linear-gradient(135deg, #FFD600, #FF8F00);
+        color: #fff;
       }
       .fullscreen_respawn:hover {
-        background: #388E3C;
-        transform: scale(1.05);
+        transform: scale(1.06);
+        box-shadow: 0 0 10px rgba(255,214,0,0.7);
       }
+
     </style>
   `);
 }
 
 // HTML
 $("#mm-advice-cont").html(`
-  <div class="vietnam" style="
-    display: grid !important;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-top: 8px;
-  ">
+  <div class="btn-container">
     <input type="button" value="FULLSCREEN" class="fullscreen_button">
     <input type="button" value="RESPAWN" id="hoisinh" class="fullscreen_respawn">
   </div>
@@ -7694,10 +7702,9 @@ $("#mm-advice-cont").html(`
 
 $(".mm-merchant-cont").html("");
 
-// أحداث الأزرار
+// الأحداث
 $(document).ready(function () {
 
-  // FULLSCREEN (محدث ونظيف)
   $(".fullscreen_button").off("click").on("click", function () {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen().catch(err => {
