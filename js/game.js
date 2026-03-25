@@ -7671,7 +7671,7 @@ if (!document.getElementById("custom-btn-style")) {
 
       /* زر ازرق */
       .fullscreen_button {
-        background: linear-gradient(135deg, #2196F3, #0D47A1);
+        background: linear-gradient(135deg, #2196F3, #599bff);
       }
       .fullscreen_button:hover {
         transform: scale(1.06);
@@ -7680,7 +7680,7 @@ if (!document.getElementById("custom-btn-style")) {
 
       /* زر اصفر */
       .fullscreen_respawn {
-        background: linear-gradient(135deg, #FFD600, #FF8F00);
+        background: linear-gradient(135deg, #FFD600, #f5f500);
         color: #fff;
       }
       .fullscreen_respawn:hover {
