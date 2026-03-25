@@ -7744,153 +7744,120 @@ $(document).ready(function () {
         }
       });
      
-    function wormyBmwServersOldStyle() {
-  $(".mm-merchant").replaceWith("");
-  $(".description-text").replaceWith(
-    "\n\
-  <div class=\"description-text\">\n\
-    <div class=\"title-wormate-bmw-connect\" style=\"position: absolute; top: 0; z-index: 1; width: 95.5%;margin-top: 10px;\">\n\
-      <img src=\"https://i.imgur.com/FVK3Q8c.png\" width=\"20\" align=\"center\" alt=\"\">wormy Bmw\n\
-    </div>\n\
-    <div class=\"description-text-hiep\">\n\
-      <ul class=\"ui-tabs-nav\">\n\
-        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active\" style=\"margin: -5px\">\n\
-          <a><span class=\"flag br\" value=\"https://i.imgur.com/dixYLjk.png\"></span></a>\n\
-        </li>\n\
-        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive1\" style=\"margin: -5px\">\n\
-          <a><span class=\"flag mx\" value=\"https://i.imgur.com/JMAvuFN.png\"></span></a>\n\
-        </li>\n\
-        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive2\" style=\"margin: -5px\">\n\
-          <a><span class=\"flag us\" value=\"https://i.imgur.com/Jb2FF0y.png\"></span></a>\n\
-        </li>\n\
-        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive3\" style=\"margin: -5px\">\n\
-          <a><span class=\"flag ca\" value=\"https://i.imgur.com/m1skEsB.png\"></span></a>\n\
-        </li>\n\
-        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive4\" style=\"margin: -5px\">\n\
-          <a><span class=\"flag de\" value=\"https://i.imgur.com/VgCH8iy.png\"></span></a>\n\
-        </li>\n\
-        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive5\" style=\"margin: -5px\">\n\
-          <a><span class=\"flag fr\" value=\"https://i.imgur.com/QuEjBr0.png\"></span></a>\n\
-        </li>\n\
-        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive6\" style=\"margin: -5px\">\n\
-          <a><span class=\"flag sg\" value=\"https://i.imgur.com/bT3xWqF.png\"></span></a>\n\
-        </li>\n\
-        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive7\" style=\"margin: -5px\">\n\
-          <a><span class=\"flag jp\" value=\"https://i.imgur.com/P2rYk1k.png\"></span></a>\n\
-        </li>\n\
-        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive8\" style=\"margin: -5px\">\n\
-          <a><span class=\"flag au\" value=\"https://i.imgur.com/X0co8Ao.png\"></span></a>\n\
-        </li>\n\
-        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive9\" style=\"margin: -5px\">\n\
-          <a><span class=\"flag gb\" value=\"https://i.imgur.com/8pQY6RW.png\"></span></a>\n\
-        </li>\n\
-      </ul>\n\
-      <div class=\"gachngang\"></div>\n\
-      <div id='mapsv'>\n\
-        <div class='tensv'>Name</div>\n\
-        <div class='valusv'>Region</div>\n\
-        <div class='onlinesv'>On/Off</div>\n\
-        <div class='img-teamsv'>Streamer</div>\n\
-      </div>\n\
-      <div class=\"gachngang\"></div>\n\
-      <div class=\"servers-container\">\n\
-        <div class=\"servers-peru\"></div>\n\
-        <div class=\"servers-mexico\" style=\"display: none;\"></div>\n\
-        <div class=\"servers-eeuu\" style=\"display: none;\"></div>\n\
-        <div class=\"servers-canada\" style=\"display: none;\"></div>\n\
-        <div class=\"servers-germania\" style=\"display: none;\"></div>\n\
-        <div class=\"servers-francia\" style=\"display: none;\"></div>\n\
-        <div class=\"servers-singapur\" style=\"display: none;\"></div>\n\
-        <div class=\"servers-japon\" style=\"display: none;\"></div>\n\
-        <div class=\"servers-australia\" style=\"display: none;\"></div>\n\
-        <div class=\"servers-granbretana\" style=\"display: none;\"></div>\n\
-      </div>\n\
-    </div>\n\
-  </div>\n\
-  "
-  );
+    $(".mm-merchant").replaceWith("");
+$(".description-text").replaceWith("\n\
+<div class=\"description-text\">\n\
+<div class=\"title-wormate-bmw-connect\" style=\"position: absolute; top: 0; z-index: 1; width: 95.5%;margin-top: 10px;\">\n\
+<img src=\"https://i.imgur.com/FVK3Q8c.png\" width=\"20\" align=\"center\" alt=\"\">wormy Bmw</div>\n\
+<div class=\"description-text-hiep\">\n\
+<ul class=\"ui-tabs-nav\">\n\
+<li class=\"ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active\" style=\"margin: -5px\">\n\
+<a><span class=\"flag br\" value=\"https://i.imgur.com/dixYLjk.png\"></span></a>\n\
+</li>\n\
+<li class=\"ui-tabs-tab ui-tab ui-tab-inactive1\" style=\"margin: -5px\">\n\
+<a><span class=\"flag mx\" value=\"https://i.imgur.com/JMAvuFN.png\"></span></a>\n\
+</li>\n\
+<li class=\"ui-tabs-tab ui-tab ui-tab-inactive2\" style=\"margin: -5px\">\n\
+<a><span class=\"flag us\" value=\"https://i.imgur.com/Jb2FF0y.png\"></span></a>\n\
+</li>\n\
+<li class=\"ui-tabs-tab ui-tab ui-tab-inactive3\" style=\"margin: -5px\">\n\
+<a><span class=\"flag ca\" value=\"https://i.imgur.com/m1skEsB.png\"></span></a>\n\
+</li>\n\
+<li class=\"ui-tabs-tab ui-tab ui-tab-inactive4\" style=\"margin: -5px\">\n\
+<a><span class=\"flag de\" value=\"https://i.imgur.com/VgCH8iy.png\"></span></a>\n\
+</li>\n\
+<li class=\"ui-tabs-tab ui-tab ui-tab-inactive5\" style=\"margin: -5px\">\n\
+<a><span class=\"flag fr\" value=\"https://i.imgur.com/QuEjBr0.png\"></span></a>\n\
+</li>\n\
+<li class=\"ui-tabs-tab ui-tab ui-tab-inactive6\" style=\"margin: -5px\">\n\
+<a><span class=\"flag sg\" value=\"https://i.imgur.com/bT3xWqF.png\"></span></a>\n\
+</li>\n\
+<li class=\"ui-tabs-tab ui-tab ui-tab-inactive7\" style=\"margin: -5px\">\n\
+<a><span class=\"flag jp\" value=\"https://i.imgur.com/P2rYk1k.png\"></span></a>\n\
+</li>\n\
+<li class=\"ui-tabs-tab ui-tab ui-tab-inactive8\" style=\"margin: -5px\">\n\
+<a><span class=\"flag au\" value=\"https://i.imgur.com/X0co8Ao.png\"></span></a>\n\
+</li>\n\
+<li class=\"ui-tabs-tab ui-tab ui-tab-inactive9\" style=\"margin: -5px\">\n\
+<a><span class=\"flag gb\" value=\"https://i.imgur.com/8pQY6RW.png\"></span></a>\n\
+</li>\n\
+</ul>\n\
 
-  $(".ui-tab").off("click").on("click", account);
+<div class=\"gachngang\"></div>\n\
 
-  $(".flag").off("click").on("click", function () {
-    let _0x16c1ac = $(this).attr("value");
-    theoKzObjects.flag = _0x16c1ac;
+<div class=\"servers-container\">\n\
+<div class=\"servers-peru\"></div>\n\
+<div class=\"servers-mexico\" style=\"display: none;\"></div>\n\
+<div class=\"servers-eeuu\" style=\"display: none;\"></div>\n\
+<div class=\"servers-canada\" style=\"display: none;\"></div>\n\
+<div class=\"servers-germania\" style=\"display: none;\"></div>\n\
+<div class=\"servers-francia\" style=\"display: none;\"></div>\n\
+<div class=\"servers-singapur\" style=\"display: none;\"></div>\n\
+<div class=\"servers-japon\" style=\"display: none;\"></div>\n\
+<div class=\"servers-australia\" style=\"display: none;\"></div>\n\
+<div class=\"servers-granbretana\" style=\"display: none;\"></div>\n\
+</div>\n\
+</div>\n\
+</div>\n\
+");
 
-    if (ctx && ctx.containerImgS && ctx.onclickServer) {
-      ctx.containerImgS.texture = ctx.onclickServer;
-    }
+$(".ui-tab").on("click", account);
 
-    if (typeof retundFlagError === "function") {
-      retundFlagError();
-    }
+$(".flag").click(function () {
+  let _0x16c1ac = $(this).attr("value");
+  theoKzObjects.flag = _0x16c1ac;
+  ctx.containerImgS.texture = ctx.onclickServer;
+  retundFlagError();
+  console.log(_0x16c1ac);
+});
 
-    console.log(_0x16c1ac);
-  });
+for (a = 0; a < servers.Api_listServer.length; a++) {
+  var _0x818d5d = servers.Api_listServer[a].serverUrl;
+  var _0x403339 = servers.Api_listServer[a].name;
+  var _0x478a25 = servers.Api_listServer[a].region;
+  let _0x36b67c = document.createElement("p");
 
-  for (var a = 0; a < servers.Api_listServer.length; a++) {
-    var _0x818d5d = servers.Api_listServer[a].serverUrl;
-    var _0x403339 = servers.Api_listServer[a].name;
-    var _0x478a25 = servers.Api_listServer[a].region;
-    let _0x36b67c = document.createElement("p");
+  _0x36b67c.value = _0x818d5d;
+  _0x36b67c.innerHTML = _0x403339;
 
-    _0x36b67c.value = _0x818d5d;
-    _0x36b67c.innerHTML = _0x403339;
-
-    if (_0x478a25 == "peru") {
-      $(".servers-peru").prepend(_0x36b67c);
-    } else if (_0x478a25 == "mexico") {
-      $(".servers-mexico").prepend(_0x36b67c);
-    } else if (_0x478a25 == "eeuu") {
-      $(".servers-eeuu").prepend(_0x36b67c);
-    } else if (_0x478a25 == "canada") {
-      $(".servers-canada").prepend(_0x36b67c);
-    } else if (_0x478a25 == "germania") {
-      $(".servers-germania").prepend(_0x36b67c);
-    } else if (_0x478a25 == "francia") {
-      $(".servers-francia").prepend(_0x36b67c);
-    } else if (_0x478a25 == "singapur") {
-      $(".servers-singapur").prepend(_0x36b67c);
-    } else if (_0x478a25 == "japon") {
-      $(".servers-japon").prepend(_0x36b67c);
-    } else if (_0x478a25 == "australia") {
-      $(".servers-australia").prepend(_0x36b67c);
-    } else if (_0x478a25 == "granbretana") {
-      $(".servers-granbretana").prepend(_0x36b67c);
-    }
-
-    $(_0x36b67c).attr("id", _0x478a25);
-    $(_0x36b67c).attr("class", "selectSala");
-    $(_0x36b67c).attr("value", _0x403339);
-    $(_0x36b67c).attr("data-server-url", _0x818d5d);
-    $(_0x36b67c).attr("data-server-name", _0x403339);
-    $(_0x36b67c).attr("data-server-region", _0x478a25);
-
-    $(_0x36b67c).off("click").on("click", function () {
-      let _0x1f5799 = $(this).find("#svhiep .valu").text().trim();
-
-      if (!_0x1f5799) {
-        _0x1f5799 = $(this).attr("data-server-url") || this.value || "";
-      }
-
-      if (ctx && typeof ctx.setServer === "function") {
-        ctx.setServer(_0x1f5799);
-      }
-
-      let _0x266a05 = $(this).attr("data-server-url") || this.value || "";
-
-      if (ctx && ctx.containerImgS && ctx.onclickServer) {
-        ctx.containerImgS.texture = ctx.onclickServer;
-      }
-
-      if (typeof retundFlagError === "function") {
-        retundFlagError();
-      }
-
-      window.server_url = _0x266a05;
-      $("#mm-action-play").click();
-      $("#adbl-continue").click();
-    });
+  if (_0x478a25 == "peru") {
+    $(".servers-peru").prepend(_0x36b67c);
+  } else if (_0x478a25 == "mexico") {
+    $(".servers-mexico").prepend(_0x36b67c);
+  } else if (_0x478a25 == "eeuu") {
+    $(".servers-eeuu").prepend(_0x36b67c);
+  } else if (_0x478a25 == "canada") {
+    $(".servers-canada").prepend(_0x36b67c);
+  } else if (_0x478a25 == "germania") {
+    $(".servers-germania").prepend(_0x36b67c);
+  } else if (_0x478a25 == "francia") {
+    $(".servers-francia").prepend(_0x36b67c);
+  } else if (_0x478a25 == "singapur") {
+    $(".servers-singapur").prepend(_0x36b67c);
+  } else if (_0x478a25 == "japon") {
+    $(".servers-japon").prepend(_0x36b67c);
+  } else if (_0x478a25 == "australia") {
+    $(".servers-australia").prepend(_0x36b67c);
+  } else if (_0x478a25 == "granbretana") {
+    $(".servers-granbretana").prepend(_0x36b67c);
   }
+
+  $(_0x36b67c).attr("id", _0x478a25);
+  $(_0x36b67c).attr("class", "selectSala");
+  $(_0x36b67c).attr("value", _0x403339);
+
+  $(_0x36b67c).click(function () {
+    let _0x1f5799 = $(this).find("#svhiep .valu").text().trim();
+    ctx.setServer(_0x1f5799);
+
+    let _0x266a05 = $(this).val();
+    ctx.containerImgS.texture = ctx.onclickServer;
+    retundFlagError();
+
+    window.server_url = _0x266a05;
+    $("#mm-action-play").click();
+    $("#adbl-continue").click();
+  });
 }
     function _0x215dc0() {
       $("#getskin").on("click", function () {
