@@ -7744,82 +7744,139 @@ $(document).ready(function () {
         }
       });
      
-    $(".mm-merchant").replaceWith("");
+    function wormyBmwServersOldStyle() {
+  $(".mm-merchant").replaceWith("");
+  $(".description-text").replaceWith(
+    "\n\
+  <div class=\"description-text\">\n\
+    <div class=\"title-wormate-bmw-connect\" style=\"position: absolute; top: 0; z-index: 1; width: 95.5%;margin-top: 10px;\">\n\
+      <img src=\"https://i.imgur.com/FVK3Q8c.png\" width=\"20\" align=\"center\" alt=\"\">wormy Bmw\n\
+    </div>\n\
+    <div class=\"description-text-hiep\">\n\
+      <ul class=\"ui-tabs-nav\">\n\
+        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active\" style=\"margin: -5px\">\n\
+          <a><span class=\"flag br\" value=\"https://i.imgur.com/dixYLjk.png\"></span></a>\n\
+        </li>\n\
+        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive1\" style=\"margin: -5px\">\n\
+          <a><span class=\"flag mx\" value=\"https://i.imgur.com/JMAvuFN.png\"></span></a>\n\
+        </li>\n\
+        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive2\" style=\"margin: -5px\">\n\
+          <a><span class=\"flag us\" value=\"https://i.imgur.com/Jb2FF0y.png\"></span></a>\n\
+        </li>\n\
+        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive3\" style=\"margin: -5px\">\n\
+          <a><span class=\"flag ca\" value=\"https://i.imgur.com/m1skEsB.png\"></span></a>\n\
+        </li>\n\
+        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive4\" style=\"margin: -5px\">\n\
+          <a><span class=\"flag de\" value=\"https://i.imgur.com/VgCH8iy.png\"></span></a>\n\
+        </li>\n\
+        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive5\" style=\"margin: -5px\">\n\
+          <a><span class=\"flag fr\" value=\"https://i.imgur.com/QuEjBr0.png\"></span></a>\n\
+        </li>\n\
+        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive6\" style=\"margin: -5px\">\n\
+          <a><span class=\"flag sg\" value=\"https://i.imgur.com/bT3xWqF.png\"></span></a>\n\
+        </li>\n\
+        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive7\" style=\"margin: -5px\">\n\
+          <a><span class=\"flag jp\" value=\"https://i.imgur.com/P2rYk1k.png\"></span></a>\n\
+        </li>\n\
+        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive8\" style=\"margin: -5px\">\n\
+          <a><span class=\"flag au\" value=\"https://i.imgur.com/X0co8Ao.png\"></span></a>\n\
+        </li>\n\
+        <li class=\"ui-tabs-tab ui-tab ui-tab-inactive9\" style=\"margin: -5px\">\n\
+          <a><span class=\"flag gb\" value=\"https://i.imgur.com/8pQY6RW.png\"></span></a>\n\
+        </li>\n\
+      </ul>\n\
+      <div class=\"gachngang\"></div>\n\
+      <div id='mapsv'>\n\
+        <div class='tensv'>Name</div>\n\
+        <div class='valusv'>Region</div>\n\
+        <div class='onlinesv'>On/Off</div>\n\
+        <div class='img-teamsv'>Streamer</div>\n\
+      </div>\n\
+      <div class=\"gachngang\"></div>\n\
+      <div class=\"servers-container\">\n\
+        <div class=\"servers-peru\"></div>\n\
+        <div class=\"servers-mexico\" style=\"display: none;\"></div>\n\
+        <div class=\"servers-eeuu\" style=\"display: none;\"></div>\n\
+        <div class=\"servers-canada\" style=\"display: none;\"></div>\n\
+        <div class=\"servers-germania\" style=\"display: none;\"></div>\n\
+        <div class=\"servers-francia\" style=\"display: none;\"></div>\n\
+        <div class=\"servers-singapur\" style=\"display: none;\"></div>\n\
+        <div class=\"servers-japon\" style=\"display: none;\"></div>\n\
+        <div class=\"servers-australia\" style=\"display: none;\"></div>\n\
+        <div class=\"servers-granbretana\" style=\"display: none;\"></div>\n\
+      </div>\n\
+    </div>\n\
+  </div>\n\
+  "
+  );
 
-    $(".description-text").replaceWith(`
-      <div class="description-text">
-        <div class="title-wormate-bmw-connect" style="position: absolute; top: 0; z-index: 1; width: 95.5%; margin-top: 10px;">
-          <img src="https://i.imgur.com/FVK3Q8c.png" width="20" align="center" alt="">
-          wormy Bmw
-        </div>
+  $(".ui-tab").off("click").on("click", account);
 
-        <div class="description-text-hiep">
-          <ul class="ui-tabs-nav">
-            <li class="ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active" style="margin: -5px">
-              <a><span class="flag br" value="https://i.imgur.com/dixYLjk.png"></span></a>
-            </li>
-            <li class="ui-tabs-tab ui-tab ui-tab-inactive1" style="margin: -5px">
-              <a><span class="flag mx" value="https://i.imgur.com/JMAvuFN.png"></span></a>
-            </li>
-            <li class="ui-tabs-tab ui-tab ui-tab-inactive2" style="margin: -5px">
-              <a><span class="flag us" value="https://i.imgur.com/Jb2FF0y.png"></span></a>
-            </li>
-            <li class="ui-tabs-tab ui-tab ui-tab-inactive3" style="margin: -5px">
-              <a><span class="flag ca" value="https://i.imgur.com/m1skEsB.png"></span></a>
-            </li>
-            <li class="ui-tabs-tab ui-tab ui-tab-inactive4" style="margin: -5px">
-              <a><span class="flag de" value="https://i.imgur.com/VgCH8iy.png"></span></a>
-            </li>
-            <li class="ui-tabs-tab ui-tab ui-tab-inactive5" style="margin: -5px">
-              <a><span class="flag fr" value="https://i.imgur.com/QuEjBr0.png"></span></a>
-            </li>
-            <li class="ui-tabs-tab ui-tab ui-tab-inactive6" style="margin: -5px">
-              <a><span class="flag sg" value="https://i.imgur.com/bT3xWqF.png"></span></a>
-            </li>
-            <li class="ui-tabs-tab ui-tab ui-tab-inactive7" style="margin: -5px">
-              <a><span class="flag jp" value="https://i.imgur.com/P2rYk1k.png"></span></a>
-            </li>
-            <li class="ui-tabs-tab ui-tab ui-tab-inactive8" style="margin: -5px">
-              <a><span class="flag au" value="https://i.imgur.com/X0co8Ao.png"></span></a>
-            </li>
-            <li class="ui-tabs-tab ui-tab ui-tab-inactive9" style="margin: -5px">
-              <a><span class="flag gb" value="https://i.imgur.com/8pQY6RW.png"></span></a>
-            </li>
-          </ul>
+  $(".flag").off("click").on("click", function () {
+    let _0x16c1ac = $(this).attr("value");
+    theoKzObjects.flag = _0x16c1ac;
 
-          <div class="gachngang"></div>
+    if (ctx && ctx.containerImgS && ctx.onclickServer) {
+      ctx.containerImgS.texture = ctx.onclickServer;
+    }
 
-          <div id="mapsv">
-            <div class="tensv">Name</div>
-            <div class="valusv">Region</div>
-            <div class="onlinesv">On/Off</div>
-            <div class="img-teamsv">Streamer</div>
-          </div>
+    if (typeof retundFlagError === "function") {
+      retundFlagError();
+    }
 
-          <div class="gachngang"></div>
+    console.log(_0x16c1ac);
+  });
 
-          <div class="servers-container">
-            <div class="servers-peru"></div>
-            <div class="servers-mexico" style="display: none;"></div>
-            <div class="servers-eeuu" style="display: none;"></div>
-            <div class="servers-canada" style="display: none;"></div>
-            <div class="servers-germania" style="display: none;"></div>
-            <div class="servers-francia" style="display: none;"></div>
-            <div class="servers-singapur" style="display: none;"></div>
-            <div class="servers-japon" style="display: none;"></div>
-            <div class="servers-australia" style="display: none;"></div>
-            <div class="servers-granbretana" style="display: none;"></div>
-          </div>
-        </div>
-      </div>
-    `);
+  for (var a = 0; a < servers.Api_listServer.length; a++) {
+    var _0x818d5d = servers.Api_listServer[a].serverUrl;
+    var _0x403339 = servers.Api_listServer[a].name;
+    var _0x478a25 = servers.Api_listServer[a].region;
+    let _0x36b67c = document.createElement("p");
 
-    // نفس النظام القديم
-    $(".ui-tab").off("click.account").on("click.account", account);
+    _0x36b67c.value = _0x818d5d;
+    _0x36b67c.innerHTML = _0x403339;
 
-    $(".flag").off("click.flagSelect").on("click.flagSelect", function () {
-      let selectedFlag = $(this).attr("value");
-      theoKzObjects.flag = selectedFlag;
+    if (_0x478a25 == "peru") {
+      $(".servers-peru").prepend(_0x36b67c);
+    } else if (_0x478a25 == "mexico") {
+      $(".servers-mexico").prepend(_0x36b67c);
+    } else if (_0x478a25 == "eeuu") {
+      $(".servers-eeuu").prepend(_0x36b67c);
+    } else if (_0x478a25 == "canada") {
+      $(".servers-canada").prepend(_0x36b67c);
+    } else if (_0x478a25 == "germania") {
+      $(".servers-germania").prepend(_0x36b67c);
+    } else if (_0x478a25 == "francia") {
+      $(".servers-francia").prepend(_0x36b67c);
+    } else if (_0x478a25 == "singapur") {
+      $(".servers-singapur").prepend(_0x36b67c);
+    } else if (_0x478a25 == "japon") {
+      $(".servers-japon").prepend(_0x36b67c);
+    } else if (_0x478a25 == "australia") {
+      $(".servers-australia").prepend(_0x36b67c);
+    } else if (_0x478a25 == "granbretana") {
+      $(".servers-granbretana").prepend(_0x36b67c);
+    }
+
+    $(_0x36b67c).attr("id", _0x478a25);
+    $(_0x36b67c).attr("class", "selectSala");
+    $(_0x36b67c).attr("value", _0x403339);
+    $(_0x36b67c).attr("data-server-url", _0x818d5d);
+    $(_0x36b67c).attr("data-server-name", _0x403339);
+    $(_0x36b67c).attr("data-server-region", _0x478a25);
+
+    $(_0x36b67c).off("click").on("click", function () {
+      let _0x1f5799 = $(this).find("#svhiep .valu").text().trim();
+
+      if (!_0x1f5799) {
+        _0x1f5799 = $(this).attr("data-server-url") || this.value || "";
+      }
+
+      if (ctx && typeof ctx.setServer === "function") {
+        ctx.setServer(_0x1f5799);
+      }
+
+      let _0x266a05 = $(this).attr("data-server-url") || this.value || "";
 
       if (ctx && ctx.containerImgS && ctx.onclickServer) {
         ctx.containerImgS.texture = ctx.onclickServer;
@@ -7829,88 +7886,12 @@ $(document).ready(function () {
         retundFlagError();
       }
 
-      console.log(selectedFlag);
+      window.server_url = _0x266a05;
+      $("#mm-action-play").click();
+      $("#adbl-continue").click();
     });
-
-    const regionMap = {
-      peru: ".servers-peru",
-      mexico: ".servers-mexico",
-      eeuu: ".servers-eeuu",
-      canada: ".servers-canada",
-      germania: ".servers-germania",
-      francia: ".servers-francia",
-      singapur: ".servers-singapur",
-      japon: ".servers-japon",
-      australia: ".servers-australia",
-      granbretana: ".servers-granbretana"
-    };
-
-    if (
-      typeof servers !== "undefined" &&
-      servers &&
-      Array.isArray(servers.Api_listServer)
-    ) {
-      for (let a = 0; a < servers.Api_listServer.length; a++) {
-        const item = servers.Api_listServer[a];
-        if (!item) continue;
-
-        const serverUrl = item.serverUrl || "";
-        const serverName = item.name || "";
-        const serverRegion = item.region || "";
-        const targetContainer = regionMap[serverRegion];
-
-        let serverNode = document.createElement("p");
-        serverNode.value = serverUrl;
-        serverNode.innerHTML = serverName;
-
-        $(serverNode)
-          .attr("id", serverRegion)
-          .attr("class", "selectSala")
-          .attr("value", serverName)
-          .attr("data-server-url", serverUrl)
-          .attr("data-server-name", serverName)
-          .attr("data-server-region", serverRegion);
-
-        if (targetContainer) {
-          $(targetContainer).prepend(serverNode);
-        }
-
-        $(serverNode).off("click.serverPick").on("click.serverPick", function () {
-          let serverFromHtml = $(this).find("#svhiep .valu").text().trim();
-          let selectedServer =
-            serverFromHtml ||
-            $(this).attr("data-server-url") ||
-            this.value ||
-            "";
-
-          if (ctx && typeof ctx.setServer === "function") {
-            ctx.setServer(selectedServer);
-          }
-
-          let clickedValue =
-            $(this).attr("data-server-url") ||
-            this.value ||
-            "";
-
-          if (ctx && ctx.containerImgS && ctx.onclickServer) {
-            ctx.containerImgS.texture = ctx.onclickServer;
-          }
-
-          if (typeof retundFlagError === "function") {
-            retundFlagError();
-          }
-
-          window.server_url = clickedValue;
-
-          $("#mm-action-play").trigger("click");
-          $("#adbl-continue").trigger("click");
-        });
-      }
-    }
-  } catch (err) {
-    console.error("wormy bmw server ui error:", err);
   }
-})();
+}
     function _0x215dc0() {
       $("#getskin").on("click", function () {
         for (var _0x1bc509 = 0; _0x1bc509 < clientes.clientesActivos.length; _0x1bc509++) {
