@@ -4441,77 +4441,87 @@ window.addEventListener("load", function () {
             _0x4fc127.Xi();
           });
         }
-        function _0xf14ed7(_0x1a0a27) {
-          if (_0x1a0a27 && _0x1a0a27.user_data) {
-            _0x246cff(_0x1a0a27.user_data);
-            var _0x412d12 = this.ri;
-            _0x4fc127.qi = true;
-            _0x4fc127.ri = _0x39e9bb;
-            _0x4fc127.si = _0x1a0a27.user_data;
-            theoKzObjects.FB_UserID = _0x1a0a27.user_data.userId;
-            _0x4fc127.ti = _0x2e8ebc;
-            _0x1cd4d0(_0x262ee4.Oe, _0x4fc127.ti, 60);
-            _0x148942();
-            for (var _0x2ecb45 = 0; _0x2ecb45 < clientes.clientesActivos.length; _0x2ecb45++) {
-              var _0x4e72f3 = clientes.clientesActivos[_0x2ecb45].cliente_NOMBRE;
-              var _0x2b999f = clientes.clientesActivos[_0x2ecb45].cliente_ID;
-              var _0x3ec8a0 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin;
-              var _0x3356a2 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin1;
-              var _0x47ad86 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin2;
-              var _0x222e72 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin3;
-              var _0xc58ef0 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin4;
-              var _0xd3a346 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin5;
-              var _0x14917e = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin6;
-              var _0x37ac4c = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin7;
-              var _0x2e18ae = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin8;
-              var _0xdb99b5 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin9;
-              var _0x352067 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin10;
-              var _0x27add6 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin11;
-              var _0x1688d0 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin12;
-              var _0x2b564d = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin13;
-              var _0x2e7430 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin14;
-              var _0x4ed695 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin15;
-              var _0x4ac54b = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin16;
-              var _0x17dd92 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin17;
-              var _0x4ef226 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin18;
-              var _0xac0cf0 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin19;
-              var _0x36bb7a = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin20;
-              var _0x354892 = clientes.clientesActivos[_0x2ecb45].Client_KeyAccecs;
-              var _0x10565b = clientes.clientesActivos[_0x2ecb45].cliente_DateExpired;
-              if (theoKzObjects.FB_UserID == 0) {} else if (theoKzObjects.FB_UserID == _0x2b999f) {
-                $("#mm-line-top").append("<div class='het-han'> Expiration date : " + _0x10565b + "</div>");
-                $("#mm-line-bottom").append("<div class='het-han' style='left: 300px; top: 46px;font-size: 15px;'> Expiration date : " + _0x10565b + "</div>");
-                $(".profile-user").append("<div class='het-han'> Expiration date : " + _0x10565b + "</div>");
-                $(".profile-user").append("<div class=\"idwormate\"><input type=\"text\" value=\"" + theoKzObjects.FB_UserID + "\" style=\"width: 88%; height: 35px; border-radius: 4px; font-size: 18px; /* padding: 0 6px; */ text-align: center; background-color: #fff; color: #0a6928; font-weight: 600; display: block;\"/>\n      <button style=\"padding: 19px; float: right; margin-top: -40px; margin-right: -40px; line-height: 0; font-size: 18px;\" onclick=\"navigator.clipboard.writeText('" + theoKzObjects.FB_UserID + "').then(()=> alert('You ID " + theoKzObjects.FB_UserID + " copiado! copied!'));\">Copy</button></div>");
-                _0x2e1b3f();
-                _0x215dc0();
-              } else {}
-            }
-            theoKzObjects.loading = false;
-            if (_0x412d12 !== _0x39e9bb) {
-              _0x4fc127.aj();
-            } else {
-              _0x4fc127.Si();
-            }
-            localStorage.setItem("token__gg", _0x39e9bb);
-          } else {
-            _0x4fc127.Xi();
-          }
-        }
-      };
-      _0x151dc5.prototype.Xi = function () {
-        this.Wi();
-      };
-      _0x151dc5.prototype.$i = function () {
-        console.log("lo:fb");
-        FB.logout(function () {});
-      };
-      _0x151dc5.prototype._i = function () {
-        console.log("lo:gg");
-        GoogleAuth.signOut();
-      };
-      return _0x151dc5;
-    }();
+       function _0xf14ed7(_0x1a0a27) {
+  if (_0x1a0a27 && _0x1a0a27.user_data) {
+    _0x246cff(_0x1a0a27.user_data);
+    var _0x412d12 = this.ri;
+    _0x4fc127.qi = true;
+    _0x4fc127.ri = _0x39e9bb;
+    _0x4fc127.si = _0x1a0a27.user_data;
+    theoKzObjects.FB_UserID = _0x1a0a27.user_data.userId;
+    _0x4fc127.ti = _0x2e8ebc;
+    _0x1cd4d0(_0x262ee4.Oe, _0x4fc127.ti, 60);
+    _0x148942();
+
+    for (var _0x2ecb45 = 0; _0x2ecb45 < clientes.clientesActivos.length; _0x2ecb45++) {
+      var _0x4e72f3 = clientes.clientesActivos[_0x2ecb45].cliente_NOMBRE;
+      var _0x2b999f = clientes.clientesActivos[_0x2ecb45].cliente_ID;
+      var _0x3ec8a0 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin;
+      var _0x3356a2 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin1;
+      var _0x47ad86 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin2;
+      var _0x222e72 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin3;
+      var _0xc58ef0 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin4;
+      var _0xd3a346 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin5;
+      var _0x14917e = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin6;
+      var _0x37ac4c = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin7;
+      var _0x2e18ae = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin8;
+      var _0xdb99b5 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin9;
+      var _0x352067 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin10;
+      var _0x27add6 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin11;
+      var _0x1688d0 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin12;
+      var _0x2b564d = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin13;
+      var _0x2e7430 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin14;
+      var _0x4ed695 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin15;
+      var _0x4ac54b = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin16;
+      var _0x17dd92 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin17;
+      var _0x4ef226 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin18;
+      var _0xac0cf0 = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin19;
+      var _0x36bb7a = clientes.clientesActivos[_0x2ecb45].Client_VisibleSkin20;
+      var _0x354892 = clientes.clientesActivos[_0x2ecb45].Client_KeyAccecs;
+
+      if (theoKzObjects.FB_UserID == 0) {
+      } else if (theoKzObjects.FB_UserID == _0x2b999f) {
+        $(".profile-user").append(
+          "<div class=\"idwormate\"><input type=\"text\" value=\"" +
+            theoKzObjects.FB_UserID +
+            "\" style=\"width: 88%; height: 35px; border-radius: 4px; font-size: 18px; text-align: center; background-color: #fff; color: #0a6928; font-weight: 600; display: block;\"/>\n" +
+            "<button style=\"padding: 19px; float: right; margin-top: -40px; margin-right: -40px; line-height: 0; font-size: 18px;\" onclick=\"navigator.clipboard.writeText('" +
+            theoKzObjects.FB_UserID +
+            "').then(()=> alert('You ID " +
+            theoKzObjects.FB_UserID +
+            " copiado! copied!'));\">Copy</button></div>"
+        );
+        _0x2e1b3f();
+        _0x215dc0();
+      } else {
+      }
+    }
+
+    theoKzObjects.loading = false;
+    if (_0x412d12 !== _0x39e9bb) {
+      _0x4fc127.aj();
+    } else {
+      _0x4fc127.Si();
+    }
+    localStorage.setItem("token__gg", _0x39e9bb);
+  } else {
+    _0x4fc127.Xi();
+  }
+}
+};
+_0x151dc5.prototype.Xi = function () {
+  this.Wi();
+};
+_0x151dc5.prototype.$i = function () {
+  console.log("lo:fb");
+  FB.logout(function () {});
+};
+_0x151dc5.prototype._i = function () {
+  console.log("lo:gg");
+  GoogleAuth.signOut();
+};
+return _0x151dc5;
+}();
     var _0x258d48 = function () {
       function _0x5d36a4() {
         this.cj = {};
