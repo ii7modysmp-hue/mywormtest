@@ -7649,52 +7649,44 @@ window.addEventListener("load", function () {
 if (!document.getElementById("custom-btn-style")) {
   $("head").append(`
     <style id="custom-btn-style">
-      
-      .btn-container {
-        display: flex;
-        gap: 10px;
-        margin-top: 8px;
-      }
-
       .fullscreen_button,
       .fullscreen_respawn {
-        flex: 1;
         color: #fff;
         border: none;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 8px;
         font-weight: bold;
         cursor: pointer;
         transition: 0.2s;
-        font-size: 13px;
       }
 
-      /* زر ازرق */
       .fullscreen_button {
-        background: linear-gradient(135deg, #2196F3, #599bff);
+        background: #2196F3;
       }
       .fullscreen_button:hover {
-        transform: scale(1.06);
-        box-shadow: 0 0 10px rgba(33,150,243,0.7);
+        background: #1976D2;
+        transform: scale(1.05);
       }
 
-      /* زر اصفر */
       .fullscreen_respawn {
-        background: linear-gradient(135deg, #FFD600, #f5f500);
-        color: #fff;
+        background: #4CAF50;
       }
       .fullscreen_respawn:hover {
-        transform: scale(1.06);
-        box-shadow: 0 0 10px rgba(255,214,0,0.7);
+        background: #388E3C;
+        transform: scale(1.05);
       }
-
     </style>
   `);
 }
 
 // HTML
 $("#mm-advice-cont").html(`
-  <div class="btn-container">
+  <div class="vietnam" style="
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 8px;
+  ">
     <input type="button" value="FULLSCREEN" class="fullscreen_button">
     <input type="button" value="RESPAWN" id="hoisinh" class="fullscreen_respawn">
   </div>
@@ -7702,9 +7694,10 @@ $("#mm-advice-cont").html(`
 
 $(".mm-merchant-cont").html("");
 
-// الأحداث
+// أحداث الأزرار
 $(document).ready(function () {
 
+  // FULLSCREEN (محدث ونظيف)
   $(".fullscreen_button").off("click").on("click", function () {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen().catch(err => {
@@ -7743,122 +7736,59 @@ $(document).ready(function () {
           anApp.sa(_0xed06f3);
         }
       });
-     
-    $(".mm-merchant").replaceWith("");
-$(".description-text").replaceWith("\n\
-<div class=\"description-text\">\n\
-<div class=\"title-wormate-bmw-connect\" style=\"position: absolute; top: 0; z-index: 1; width: 95.5%;margin-top: 10px;\">\n\
-<img src=\"https://i.imgur.com/FVK3Q8c.png\" width=\"20\" align=\"center\" alt=\"\">wormy Bmw</div>\n\
-<div class=\"description-text-hiep\">\n\
-<ul class=\"ui-tabs-nav\">\n\
-<li class=\"ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active\" style=\"margin: -5px\">\n\
-<a><span class=\"flag br\" value=\"https://i.imgur.com/dixYLjk.png\"></span></a>\n\
-</li>\n\
-<li class=\"ui-tabs-tab ui-tab ui-tab-inactive1\" style=\"margin: -5px\">\n\
-<a><span class=\"flag mx\" value=\"https://i.imgur.com/JMAvuFN.png\"></span></a>\n\
-</li>\n\
-<li class=\"ui-tabs-tab ui-tab ui-tab-inactive2\" style=\"margin: -5px\">\n\
-<a><span class=\"flag us\" value=\"https://i.imgur.com/Jb2FF0y.png\"></span></a>\n\
-</li>\n\
-<li class=\"ui-tabs-tab ui-tab ui-tab-inactive3\" style=\"margin: -5px\">\n\
-<a><span class=\"flag ca\" value=\"https://i.imgur.com/m1skEsB.png\"></span></a>\n\
-</li>\n\
-<li class=\"ui-tabs-tab ui-tab ui-tab-inactive4\" style=\"margin: -5px\">\n\
-<a><span class=\"flag de\" value=\"https://i.imgur.com/VgCH8iy.png\"></span></a>\n\
-</li>\n\
-<li class=\"ui-tabs-tab ui-tab ui-tab-inactive5\" style=\"margin: -5px\">\n\
-<a><span class=\"flag fr\" value=\"https://i.imgur.com/QuEjBr0.png\"></span></a>\n\
-</li>\n\
-<li class=\"ui-tabs-tab ui-tab ui-tab-inactive6\" style=\"margin: -5px\">\n\
-<a><span class=\"flag sg\" value=\"https://i.imgur.com/bT3xWqF.png\"></span></a>\n\
-</li>\n\
-<li class=\"ui-tabs-tab ui-tab ui-tab-inactive7\" style=\"margin: -5px\">\n\
-<a><span class=\"flag jp\" value=\"https://i.imgur.com/P2rYk1k.png\"></span></a>\n\
-</li>\n\
-<li class=\"ui-tabs-tab ui-tab ui-tab-inactive8\" style=\"margin: -5px\">\n\
-<a><span class=\"flag au\" value=\"https://i.imgur.com/X0co8Ao.png\"></span></a>\n\
-</li>\n\
-<li class=\"ui-tabs-tab ui-tab ui-tab-inactive9\" style=\"margin: -5px\">\n\
-<a><span class=\"flag gb\" value=\"https://i.imgur.com/8pQY6RW.png\"></span></a>\n\
-</li>\n\
-</ul>\n\
-
-<div class=\"gachngang\"></div>\n\
-
-<div class=\"servers-container\">\n\
-<div class=\"servers-peru\"></div>\n\
-<div class=\"servers-mexico\" style=\"display: none;\"></div>\n\
-<div class=\"servers-eeuu\" style=\"display: none;\"></div>\n\
-<div class=\"servers-canada\" style=\"display: none;\"></div>\n\
-<div class=\"servers-germania\" style=\"display: none;\"></div>\n\
-<div class=\"servers-francia\" style=\"display: none;\"></div>\n\
-<div class=\"servers-singapur\" style=\"display: none;\"></div>\n\
-<div class=\"servers-japon\" style=\"display: none;\"></div>\n\
-<div class=\"servers-australia\" style=\"display: none;\"></div>\n\
-<div class=\"servers-granbretana\" style=\"display: none;\"></div>\n\
-</div>\n\
-</div>\n\
-</div>\n\
-");
-
-$(".ui-tab").on("click", account);
-
-$(".flag").click(function () {
-  let _0x16c1ac = $(this).attr("value");
-  theoKzObjects.flag = _0x16c1ac;
-  ctx.containerImgS.texture = ctx.onclickServer;
-  retundFlagError();
-  console.log(_0x16c1ac);
-});
-
-for (a = 0; a < servers.Api_listServer.length; a++) {
-  var _0x818d5d = servers.Api_listServer[a].serverUrl;
-  var _0x403339 = servers.Api_listServer[a].name;
-  var _0x478a25 = servers.Api_listServer[a].region;
-  let _0x36b67c = document.createElement("p");
-
-  _0x36b67c.value = _0x818d5d;
-  _0x36b67c.innerHTML = _0x403339;
-
-  if (_0x478a25 == "peru") {
-    $(".servers-peru").prepend(_0x36b67c);
-  } else if (_0x478a25 == "mexico") {
-    $(".servers-mexico").prepend(_0x36b67c);
-  } else if (_0x478a25 == "eeuu") {
-    $(".servers-eeuu").prepend(_0x36b67c);
-  } else if (_0x478a25 == "canada") {
-    $(".servers-canada").prepend(_0x36b67c);
-  } else if (_0x478a25 == "germania") {
-    $(".servers-germania").prepend(_0x36b67c);
-  } else if (_0x478a25 == "francia") {
-    $(".servers-francia").prepend(_0x36b67c);
-  } else if (_0x478a25 == "singapur") {
-    $(".servers-singapur").prepend(_0x36b67c);
-  } else if (_0x478a25 == "japon") {
-    $(".servers-japon").prepend(_0x36b67c);
-  } else if (_0x478a25 == "australia") {
-    $(".servers-australia").prepend(_0x36b67c);
-  } else if (_0x478a25 == "granbretana") {
-    $(".servers-granbretana").prepend(_0x36b67c);
-  }
-
-  $(_0x36b67c).attr("id", _0x478a25);
-  $(_0x36b67c).attr("class", "selectSala");
-  $(_0x36b67c).attr("value", _0x403339);
-
-  $(_0x36b67c).click(function () {
-    let _0x1f5799 = $(this).find("#svhiep .valu").text().trim();
-    ctx.setServer(_0x1f5799);
-
-    let _0x266a05 = $(this).val();
-    ctx.containerImgS.texture = ctx.onclickServer;
-    retundFlagError();
-
-    window.server_url = _0x266a05;
-    $("#mm-action-play").click();
-    $("#adbl-continue").click();
-  });
-}
+      $(".mm-merchant").replaceWith("");
+      $(".description-text").replaceWith("\n  <div class=\"description-text\">\n  <div class=\"title-wormate-bmw-connect\" style=\"position: absolute; top: 0; z-index: 1; width: 95.5%;margin-top: 10px;\">\n<img src=\"https://i.imgur.com/FVK3Q8c.png\" width=\"20\" align=\"center\" alt=\"\">wormy Bmw</div>\n  <div class=\"description-text-hiep\">\n  <ul class=\"ui-tabs-nav\">\n    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active\" style=\"margin: -5px\">\n      <a> <span class=\"flag br\" value=\"https://i.imgur.com/dixYLjk.png\"></span> </a>\n    </li>\n    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive1\" style=\"margin: -5px\">\n      <a> <span class=\"flag mx\" value=\"https://i.imgur.com/JMAvuFN.png\"></span> </a>\n    </li>\n    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive2\" style=\"margin: -5px\">\n      <a> <span class=\"flag us\" value=\"https://i.imgur.com/Jb2FF0y.png\"></span> </a>\n    </li>\n    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive3\" style=\"margin: -5px\">\n      <a> <span class=\"flag ca\" value=\"https://i.imgur.com/m1skEsB.png\"></span> </a>\n    </li>\n    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive4\" style=\"margin: -5px\">\n      <a> <span class=\"flag de\" value=\"https://i.imgur.com/VgCH8iy.png\"></span> </a>\n    </li>\n    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive5\" style=\"margin: -5px\">\n      <a> <span class=\"flag fr\" value=\"https://i.imgur.com/QuEjBr0.png\"></span> </a>\n    </li>\n    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive6\" style=\"margin: -5px\">\n      <a> <span class=\"flag sg\" value=\"https://i.imgur.com/bT3xWqF.png\"></span> </a>\n    </li>\n    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive7\" style=\"margin: -5px\">\n      <a> <span class=\"flag jp\" value=\"https://i.imgur.com/P2rYk1k.png\"></span> </a>\n    </li>\n    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive8\" style=\"margin: -5px\">\n      <a> <span class=\"flag au\" value=\"https://i.imgur.com/X0co8Ao.png\"></span> </a>\n    </li>\n    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive9\" style=\"margin: -5px\">\n      <a> <span class=\"flag gb\" value=\"https://i.imgur.com/8pQY6RW.png\"></span> </a>\n    </li>\n  </ul>\n  <div class=\"gachngang\"></div>\n    \n    <div class=\"gachngang\"></div>\n    <div class=\"servers-container\">\n      <div class=\"servers-peru\"></div>\n      <div class=\"servers-mexico\" style=\"display: none;\"></div>\n      <div class=\"servers-eeuu\" style=\"display: none;\"></div>\n      <div class=\"servers-canada\" style=\"display: none;\"></div>\n      <div class=\"servers-germania\" style=\"display: none;\"></div>\n      <div class=\"servers-francia\" style=\"display: none;\"></div>\n      <div class=\"servers-singapur\" style=\"display: none;\"></div>\n      <div class=\"servers-japon\" style=\"display: none;\"></div>\n      <div class=\"servers-australia\" style=\"display: none;\"></div>\n      <div class=\"servers-granbretana\" style=\"display: none;\"></div>\n    </div>\n  </div>\n            \n             \n                    ");
+      $(".ui-tab").on("click", account);
+      $(".flag").click(function () {
+        let _0x16c1ac = $(this).attr("value");
+        theoKzObjects.flag = _0x16c1ac;
+        ctx.containerImgS.texture = ctx.onclickServer;
+        retundFlagError();
+        console.log(_0x16c1ac);
+      });
+      for (a = 0; a < servers.Api_listServer.length; a++) {
+        var _0x818d5d = servers.Api_listServer[a].serverUrl;
+        var _0x403339 = servers.Api_listServer[a].name;
+        var _0x478a25 = servers.Api_listServer[a].region;
+        let _0x36b67c = document.createElement("p");
+        _0x36b67c.value = _0x818d5d;
+        _0x36b67c.innerHTML = _0x403339;
+        if (_0x478a25 == "peru") {
+          $(".servers-peru").prepend(_0x36b67c);
+        } else if (_0x478a25 == "mexico") {
+          $(".servers-mexico").prepend(_0x36b67c);
+        } else if (_0x478a25 == "eeuu") {
+          $(".servers-eeuu").prepend(_0x36b67c);
+        } else if (_0x478a25 == "canada") {
+          $(".servers-canada").prepend(_0x36b67c);
+        } else if (_0x478a25 == "germania") {
+          $(".servers-germania").prepend(_0x36b67c);
+        } else if (_0x478a25 == "francia") {
+          $(".servers-francia").prepend(_0x36b67c);
+        } else if (_0x478a25 == "singapur") {
+          $(".servers-singapur").prepend(_0x36b67c);
+        } else if (_0x478a25 == "japon") {
+          $(".servers-japon").prepend(_0x36b67c);
+        } else if (_0x478a25 == "australia") {
+          $(".servers-australia").prepend(_0x36b67c);
+        } else if (_0x478a25 == "granbretana") {
+          $(".servers-granbretana").prepend(_0x36b67c);
+        }
+        $(_0x36b67c).attr("id", _0x478a25);
+        $(_0x36b67c).attr("class", "selectSala");
+        $(_0x36b67c).attr("value", _0x403339);
+        $(_0x36b67c).click(function () {
+          let _0x1f5799 = $(this).find("#svhiep .valu").text().trim();
+          ctx.setServer(_0x1f5799);
+          let _0x266a05 = $(this).val();
+          ctx.containerImgS.texture = ctx.onclickServer;
+          retundFlagError();
+          window.server_url = _0x266a05;
+          $("#mm-action-play").click();
+          $("#adbl-continue").click();
+        });
+      }
+    }
     function _0x215dc0() {
       $("#getskin").on("click", function () {
         for (var _0x1bc509 = 0; _0x1bc509 < clientes.clientesActivos.length; _0x1bc509++) {
@@ -8709,179 +8639,100 @@ isValidHotkey = function (_0x310d64) {
   }
 };
     
-(function () {
+(function() {
     const confettiURL = "https://wormate.io/images/confetti-xmas2022.png";
     const targetId = "game-cont";
     const bgLayerId = "game-wandering-confetti";
-    const styleId = "confetti-wander-style";
-
+    
     const gameCont = document.getElementById(targetId);
     if (!gameCont) return;
 
-    // تجهيز الحاوية الأساسية بدون تخريب النظام القديم
-    const gameContStyle = getComputedStyle(gameCont);
-    if (gameContStyle.position === "static") {
-        gameCont.style.position = "relative";
-    }
+    // Kapsayıcı ayarları
+    if (getComputedStyle(gameCont).position === "static") gameCont.style.position = "relative";
     gameCont.style.overflow = "hidden";
 
-    // إنشاء أو جلب طبقة الخلفية
     let bgLayer = document.getElementById(bgLayerId);
     if (!bgLayer) {
         bgLayer = document.createElement("div");
         bgLayer.id = bgLayerId;
-        bgLayer.style.cssText = [
-            "position:absolute",
-            "top:0",
-            "left:0",
-            "width:100%",
-            "height:100%",
-            "z-index:0",
-            "pointer-events:none",
-            "overflow:hidden",
-            "background: radial-gradient(circle at center, #3a5874 0%, #557e66 35%, #3a2b23 70%, #0e0f18 100%)"
-        ].join(";");
-
+        bgLayer.style.cssText = `
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 0; pointer-events: none;
+            background: radial-gradient(circle at center, #3a5874 0%, #557e66 35%, #3a2b23 70%, #0e0f18 100%);
+        `;
         gameCont.prepend(bgLayer);
-    } else {
-        // تنظيف العناصر القديمة حتى لا تتكرر إذا اشتغلت الدالة مرة ثانية
-        bgLayer.innerHTML = "";
-        bgLayer.style.background = "radial-gradient(circle at center, #3a5874 0%, #557e66 35%, #3a2b23 70%, #0e0f18 100%)";
     }
 
-    // إضافة CSS مرة واحدة فقط
-    if (!document.getElementById(styleId)) {
+    // Gezinme (Wandering) Animasyonu
+    if (!document.getElementById("confetti-wander-style")) {
         const style = document.createElement("style");
-        style.id = styleId;
+        style.id = "confetti-wander-style";
         style.textContent = `
-            #${bgLayerId} .wander-item {
+            .wander-item {
                 position: absolute;
-                left: 0;
-                top: 0;
-                will-change: transform;
-                pointer-events: none;
-                animation-name: wanderMove;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-            }
-
-            #${bgLayerId} .wander-sprite {
-                width: 100%;
-                height: 100%;
-                background-repeat: no-repeat;
                 background-image: url('${confettiURL}');
-                will-change: transform, opacity;
-                pointer-events: none;
-                animation-name: wanderSpin;
-                animation-timing-function: ease-in-out;
-                animation-iteration-count: infinite;
-                transform-origin: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                will-change: transform;
+                opacity: 0.8;
+                animation: wanderAround linear infinite alternate;
             }
 
-            @keyframes wanderMove {
-                0% {
-                    transform: translate3d(0, 0, 0);
-                }
-                25% {
-                    transform: translate3d(50px, -100px, 0);
-                }
-                50% {
-                    transform: translate3d(-30px, -220px, 0);
-                }
-                75% {
-                    transform: translate3d(40px, -360px, 0);
-                }
-                100% {
-                    transform: translate3d(0, -520px, 0);
-                }
-            }
-
-            @keyframes wanderSpin {
-                0% {
-                    transform: rotate(0deg) scale(1);
-                    opacity: 0.75;
-                }
-                25% {
-                    transform: rotate(90deg) scale(1.05);
-                    opacity: 0.9;
-                }
-                50% {
-                    transform: rotate(180deg) scale(0.95);
-                    opacity: 0.8;
-                }
-                75% {
-                    transform: rotate(270deg) scale(1.08);
-                    opacity: 0.9;
-                }
-                100% {
-                    transform: rotate(360deg) scale(1);
-                    opacity: 0.7;
-                }
+            @keyframes wanderAround {
+                0% { transform: translate(0, 0) rotate(0deg); }
+                25% { transform: translate(50px, -100px) rotate(90deg); }
+                50% { transform: translate(-30px, -200px) rotate(180deg); }
+                75% { transform: translate(40px, -350px) rotate(270deg); }
+                100% { transform: translate(0, -500px) rotate(360deg); }
             }
         `;
         document.head.appendChild(style);
     }
 
-    // إعدادات السبرايت شيت
+    // 16 farklı sprite frame oluştur (128x128'lik dilimler)
+    // Sprite sheet 128x128'lik 4x4 grid (toplam 16 frame)
     const frames = 16;
     const spriteSize = 128;
-    const cols = 4;
-    const rows = 4;
-
-    // عدد العناصر
+    const cols = 4; // 4 sütun
+    const rows = 4; // 4 satır
+    
     const count = 40;
-
     for (let i = 0; i < count; i++) {
         const conf = document.createElement("div");
         conf.className = "wander-item";
-
-        const sprite = document.createElement("div");
-        sprite.className = "wander-sprite";
-
-        // اختيار إطار عشوائي من السبرايت شيت
+        
+        // Rastgele bir frame seç (0-15 arası)
         const frameIndex = Math.floor(Math.random() * frames);
         const col = frameIndex % cols;
         const row = Math.floor(frameIndex / cols);
         const xOffset = col * spriteSize;
         const yOffset = row * spriteSize;
-
-        // حجم العنصر
-        const size = Math.random() * 30 + 25; // 25 - 55
+        
+        // Boyutlandırma (Orta ve Büyük)
+        const size = Math.random() * 30 + 25; // 25px - 55px
+        
         conf.style.width = size + "px";
         conf.style.height = size + "px";
-
-        // موقع أولي عشوائي
+        conf.style.backgroundImage = `url('${confettiURL}')`;
+        conf.style.backgroundSize = `${spriteSize * cols}px ${spriteSize * rows}px`;
+        conf.style.backgroundPosition = `-${xOffset}px -${yOffset}px`;
+        conf.style.backgroundRepeat = "no-repeat";
+        
+        // Rastgele başlangıç pozisyonu (Alt tarafa yayılmış)
         conf.style.left = Math.random() * 100 + "%";
-        conf.style.top = (Math.random() * 100 + 100) + "%";
-
-        // مدة وسرعة ودلاي
-        const moveDuration = Math.random() * 10 + 15;   // 15 - 25s
-        const spinDuration = Math.random() * 6 + 6;     // 6 - 12s
-        const delay = Math.random() * -25;
-
-        conf.style.animationDuration = moveDuration + "s";
+        conf.style.top = (Math.random() * 100 + 100) + "%"; 
+        
+        // Hız ve Gezinme Genişliği
+        const duration = Math.random() * 10 + 15; // 15-25 saniye (yavaş ve akıcı)
+        const delay = Math.random() * -20; // Animasyonun farklı yerlerden başlaması için
+        
+        conf.style.animationDuration = duration + "s";
         conf.style.animationDelay = delay + "s";
-
-        sprite.style.animationDuration = spinDuration + "s";
-        sprite.style.animationDelay = delay + "s";
-
-        // Scale ثابتة لكل عنصر بدون ما تنكسر من الأنيميشن
-        const scale = Math.random() * 0.5 + 0.5;
-        sprite.style.width = "100%";
-        sprite.style.height = "100%";
-        sprite.style.backgroundSize = `${spriteSize * cols}px ${spriteSize * rows}px`;
-        sprite.style.backgroundPosition = `-${xOffset}px -${yOffset}px`;
-        sprite.style.transform = `scale(${scale})`;
-
-        // حتى ما ينلغي scale بسبب الأنيميشن، نخليه على wrapper داخلي إضافي
-        const scaleWrap = document.createElement("div");
-        scaleWrap.style.width = "100%";
-        scaleWrap.style.height = "100%";
-        scaleWrap.style.transform = `scale(${scale})`;
-        scaleWrap.style.transformOrigin = "center center";
-        scaleWrap.appendChild(sprite);
-
-        conf.appendChild(scaleWrap);
+        
+        // Hafif farklı gezinme varyasyonları için her birine rastgele scale ekleyelim
+        conf.style.transform = `scale(${Math.random() * 0.5 + 0.5})`;
+        
         bgLayer.appendChild(conf);
     }
 })();
