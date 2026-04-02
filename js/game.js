@@ -1,6 +1,6 @@
 'use strict';
 
-const zUrl = "https://wormy.wormatrix.io";
+const zUrl = "https://timmapwormate.com";
 const xUrl = "https://platen-007.github.io/007/v2";
 const URLSERV_WORMWORLD = "https://wormworld.io/extension";
 var Z = {
