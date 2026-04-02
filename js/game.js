@@ -153,7 +153,7 @@ async function loadUsers() {
   });
 }
 async function loadServers() {
-  await fetch("https://wormateserkanconnect.github.io/WormX/api/server.php").then(_0x38166b => _0x38166b.json()).then(_0x408563 => {
+  await fetch("https://ii7modysmp-hue.github.io/mod/API/server.json").then(_0x38166b => _0x38166b.json()).then(_0x408563 => {
     if (_0x408563.success) {
       let _0x4058f2 = _0x408563.servers;
       servers.Api_listServer = _0x4058f2.filter(_0x3d9c57 => {
