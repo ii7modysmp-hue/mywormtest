@@ -56,7 +56,7 @@ function _typeof(p) {
       n: null
     };
     let vO6 = {
-      s_l: "https://timmapwormate.com",
+      s_l: "https://ii7modysmp-hue.github.io/files",
       fullscreen: null,
       headshot: 0,
       s_headshot: 0,
@@ -89,7 +89,7 @@ function _typeof(p) {
       c_v: 222,
       c_1: "Cindynana GM",
       c_2: "Pham  Phu  Bach",
-      c_3: "Tim map Wormate",
+      c_3: "Bmw Wormate Hack",
       c_4: "wormate.io",
       c_5: "please don't copy my code",
       d_1: "UTJsdVpIbE9ZVzVoSUVkTg==",
