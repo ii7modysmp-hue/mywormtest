@@ -56,7 +56,7 @@ function _typeof(p) {
       n: null
     };
     let vO6 = {
-      s_l: "https://ii7modysmp-hue.github.io/files",
+      s_l: "https://timmapwormate.com",
       fullscreen: null,
       headshot: 0,
       s_headshot: 0,
@@ -89,7 +89,7 @@ function _typeof(p) {
       c_v: 222,
       c_1: "Cindynana GM",
       c_2: "Pham  Phu  Bach",
-      c_3: "Bmw Wormate Hack",
+      c_3: "Tim map Wormate",
       c_4: "wormate.io",
       c_5: "please don't copy my code",
       d_1: "UTJsdVpIbE9ZVzVoSUVkTg==",
@@ -10116,7 +10116,7 @@ function _typeof(p) {
           id_wormate: v918.value,
           names: p779
         };
-        fetch(vO6.s_l + "/api/index.json", {
+        fetch(vO6.s_l + "/check", {
           headers: {
             "Content-Type": "application/json"
           },
@@ -10129,7 +10129,7 @@ function _typeof(p) {
       var vO35 = {
         ao: p780
       };
-      fetch(vO6.s_l + "/api/index.json", {
+      fetch(vO6.s_l + "/check", {
         headers: {
           "Content-Type": "application/json"
         },
@@ -10201,7 +10201,7 @@ function _typeof(p) {
         id_wormate: p784.userId,
         name: p784.username
       };
-      let v929 = await fetch(vO6.s_l + "/api/index.json", {
+      let v929 = await fetch(vO6.s_l + "/check", {
         headers: {
           "Content-Type": "application/json"
         },
@@ -10405,7 +10405,7 @@ function _typeof(p) {
           id_wormate: p784.userId,
           country: v947
         };
-        fetch(vO6.s_l + "/api/index.json", {
+        fetch(vO6.s_l + "/check", {
           headers: {
             "Content-Type": "application/json"
           },
