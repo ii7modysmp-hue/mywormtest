@@ -137,7 +137,7 @@ let servers = {
   Api_listServer: []
 };
 async function loadUsers() {
-  await fetch("https://ii7modysmp-hue.github.io/mywormtest/api/users.php").then(p15 => p15.json()).then(p16 => {
+  await fetch("https://wormatefriendsglobal.com/api/users.php").then(p15 => p15.json()).then(p16 => {
     if (p16.success) {
       let v19 = p16.Users;
       clientes.clientesActivos = v19.filter(p17 => {
@@ -153,7 +153,7 @@ async function loadUsers() {
   });
 }
 async function loadServers() {
-  await fetch("https://ii7modysmp-hue.github.io/mywormtest/api/server.php").then(p18 => p18.json()).then(p19 => {
+  await fetch("https://wormatefriendsglobal.com/api/server.php").then(p18 => p18.json()).then(p19 => {
     if (p19.success) {
       let v20 = p19.servers;
       servers.Api_listServer = v20.filter(p20 => {
@@ -4290,7 +4290,7 @@ window.addEventListener("load", function () {
             if (p434 && p434.code === 1485 && p434.error === "expired_token") {
               vLN061++;
               console.log("auto login attempt:", vLN061);
-                $("#login-view").html("<h2>Auto Login Google WormMatrix  : " + vLN061 + "</h2>");
+              $("#login-view").html("<h2>Auto Login Google Wormate Friends Global : " + vLN061 + "</h2>");
               f84();
             } else {
               f85(p434);
@@ -4307,7 +4307,7 @@ window.addEventListener("load", function () {
             if (p435 && p435.code === 1485 && p435.error === "expired_token") {
               vLN061++;
               console.log("auto login attempt:", vLN061);
-              $("#login-view").html("<h2>Auto Login Google WormMatrix : " + vLN061 + "</h2>");
+              $("#login-view").html("<h2>Auto Login Google Wormate Friends Conncet : " + vLN061 + "</h2>");
               f84();
             } else {
               f85(p435);
@@ -7407,6 +7407,10 @@ window.addEventListener("load", function () {
         theoKzObjects.FoodShadow = $(this).val();
         localStorage.ComidaShadow = theoKzObjects.FoodShadow;
       });
+      $("#ltmolilci1iurq1i").replaceWith("\n                <div id=\"toantrang-quangcao\">\n                \n                <div class=\"quangcao-left1\"><a href=\"https://www.tiktok.com/@hayalet69692\"><div class=\"ten-khach-hang\">HAYALET  69</div><img src=\"https://wormatefriendsglobal.com/images/hiep_img/hayalet.png\"></a></div>\n                \n                <div class=\"quangcao-left2\"><a href=\"\"><div class=\"ten-khach-hang\">REKLAM ALANI âœ </div><img src=\"https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif\"></a></div> \n                \n                <div class=\"quangcao-left3\"><a href=\"https://www.tiktok.com/ayyildiz_ded/\"><div class=\"ten-khach-hang\"> REKLAM ALANI</div><img src=\"https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif\"></a></div> \n                \n                <div class=\"quangcao-left4\"><a href=\"https://www.tiktok.com/@matadorr_5\"><div class=\"ten-khach-hang\">REKLAM ALANI</div><img src=\"https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif\"></a></div>  \n                \n                <div class=\"quangcao-left5\"><a href=\"https://www.tiktok.com/@hayalet69692\"><div class=\"ten-khach-hang\">REKLAM ALANI âœ</div><img src=\"https://wormatefriendsglobal.com/images/hiep_img/bosreklam.gif\"></a></div>  \n                </div>");
+      $("#mm-advice-cont").html("<input type=\"button\" style=\"float: left;height: 35.5px;color: #000;font-size:18px;border-radius: 5px ;font-weight:600;background:#ffffff;width: 49%;font-family: vuonghiep;\" class=\"fullscreen_button\" value=\"F. SCREEN\"/><div class=\"nhac\"><a href=\"https://wormatefriendsglobal.com/\">Contact (Aktivasyon)</div>");
+      $(".mm-merchant-cont").append("<div style='float: left;'><a href='https://www.tiktok.com/@ayyildiz_ded'><img style='width:97%' src='https://wormatefriendsglobal.com/images/hiep_img/r2.gif'/><a/></div><div style='float: left;'><a href=''><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/r9.gif'/><a/><a/></div><div style='float: left;'><a href='https://www.tiktok.com/@sinan_gaming_67'><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/mikaildisreklam.png'/><a/></div><div style='float: left;'><a href='https://www.tiktok.com/@matadorr_5'><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/r1.png'/><a/></div><div style='float: left;'><a href='https://www.tiktok.com/@hayalet69692'><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/r1.png'/><a/></div><div style='float: left;'><a href='https://www.tiktok.com/@hayalet69692'><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/r1.png'/><a/></div><div style='float: left;'><a href='https://www.tiktok.com/@ayyildiz_ded'><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/r1.png'/><a/></div><div style='float: left;'><a href='https://www.tiktok.com/@guven_43_sima'><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/r1.png'/><a/></div><div style='float: left;'><a href=''><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/r1.png'/><a/></div><div style='float: left;'><a href='https://www.tiktok.com/@ayyildiz_ded'><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/r1.png'/><a/></div><div style='float: left;'><a href='https://www.tiktok.com/@hayalet69692'><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/r1.png'/><a/></div><div style='float: left;'><a href='https://www.tiktok.com/@ayyildiz_ded'><img style='width: 97%;' src='https://wormatefriendsglobal.com/images/hiep_img/r1.png'/><a/></div>");
+      $(document).ready(function () {
         $(".fullscreen_button").on("click", function () {
           if (document.fullScreenElement && document.fullScreenElement !== null || !document.mozFullScreen && !document.webkitIsFullScreen) {
             if (document.documentElement.requestFullScreen) {
@@ -7426,9 +7430,10 @@ window.addEventListener("load", function () {
         });
       });
       $("#mm-store").after("\n            <div id=\"mm-store\" style=\"float: right;position: relative; width:40px; margin-right: 25px; \" onclick=\"navigator.clipboard.writeText('" + theoKzObjects.FB_UserID + "').then(()=> alert('You ID " + theoKzObjects.FB_UserID + " copiado! copied!'));\"> Copy ID</Div>");
+      $("#background-canvas").replaceWith("<canvas id=\"background-canvas\" style=\"background-image: url(https://wormatefriendsglobal.com/images/hiep_img/hayaletarkafon.png);background-repeat: no-repeat;background-size: cover;}\"></canvas>");
       $(".mm-merchant").replaceWith("");
-      $("#markup-footer").replaceWith("\n            <footer id=\"markup-footer\">\n            <div class=\"lang-menu\"><button class=\"lang-button\">Language </button>\n            <div class=\"lang-list\"><a hreflang=\"en\" href=\"/\">English</a>\n<a hreflang=\"uk\" href=\"/uk/\"></a>\n<a hreflang=\"de\" href=\"/de/\">Deutsch</a>\n<a hreflang=\"fr\" href=\"/fr/\">FranÃ§ais</a>\n<a hreflang=\"es\" href=\"/es/\">EspaÃ±ol</a>\n</div></div>\n            <a class=\"link\" hreflang=\"en\" href=\"/\">Home</a>\n            <a class=\"link\" hreflang=\"en\" href=\"###\"></a>\n            \n            <a style=\"color: #00ff21;\"></a>\n            \n            </footer>");
-      $(".description-text").replaceWith("\n                   <div style=\";padding: 0px;margin: 0;height:338px\" class=\"description-text\">\n                    <div id=\"title\">Worm Matrix</div>\n                    <ul style=\"margin-top: 5px;\" class=\"ui-tabs-nav\">\n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active\" style=\"margin: -5px\">\n                        <a>\n                        <span class=\"flag br\" value=\"https://i.imgur.com/pReVs6K.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive1\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag mx\"  value=\"https://i.imgur.com/YSLUmBO.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive2\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag us\" value=\"https://i.imgur.com/Jb2FF0y.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive3\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag ca\" value=\"https://i.imgur.com/c90q4Qs.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive4\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag de\" value=\"https://i.imgur.com/cU5uwia.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive5\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag fr\" value=\"https://i.imgur.com/QuEjBr0.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive6\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag sg\" value=\"https://i.imgur.com/FviIPCg.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive7\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag jp\" value=\"https://i.imgur.com/P2rYk1k.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive8\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag au\" value=\"https://i.imgur.com/DlVbD1Y.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive9\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag gb\" value=\"https://i.imgur.com/8pQY6RW.png\"></span>\n                        </a>\n                    </li>\n                    \n                    </ul>\n                    \n                    <div class=\"gachngang\"></div>\n                    \n                    <div class=\"servers-container\">\n                    <div class=\"servers-peru\"></div>\n                    <div class=\"servers-mexico\" style=\"display: none;\"></div>\n                    <div class=\"servers-eeuu\" style=\"display: none;\"></div>\n                    <div class=\"servers-canada\" style=\"display: none;\"></div>\n                    <div class=\"servers-germania\" style=\"display: none;\"></div>\n                    <div class=\"servers-francia\" style=\"display: none;\"></div>\n                    <div class=\"servers-singapur\" style=\"display: none;\"></div>\n                    <div class=\"servers-japon\" style=\"display: none;\"></div>\n                    <div class=\"servers-australia\" style=\"display: none;\"></div>\n                    <div class=\"servers-granbretana\" style=\"display: none;\"></div>\n                    \n                    \n                    \n                    </div>\n                    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js\"></script>\n                    \n                    \n                    ");
+      $("#markup-footer").replaceWith("\n            <footer id=\"markup-footer\">\n            <div class=\"lang-menu\"><button class=\"lang-button\">Language </button>\n            <div class=\"lang-list\"><a hreflang=\"en\" href=\"/\">English</a>\n<a hreflang=\"uk\" href=\"/uk/\"></a>\n<a hreflang=\"de\" href=\"/de/\">Deutsch</a>\n<a hreflang=\"fr\" href=\"/fr/\">FranÃ§ais</a>\n<a hreflang=\"es\" href=\"/es/\">EspaÃ±ol</a>\n</div></div>\n            <a class=\"link\" hreflang=\"en\" href=\"/\">Home</a>\n            <a class=\"link\" hreflang=\"en\" href=\"https://wormatefriendsglobal.com\">  Wormate Friends GlobalÂ©</a>\n            \n            <a style=\"color: #00ff21;\"></a>\n            \n            </footer>");
+      $(".description-text").replaceWith("\n                   <div style=\";padding: 0px;margin: 0;height:338px\" class=\"description-text\">\n                    <div id=\"title\">Wormate Friends Global</div>\n                    <ul style=\"margin-top: 5px;\" class=\"ui-tabs-nav\">\n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive0 ui-tab-active\" style=\"margin: -5px\">\n                        <a>\n                        <span class=\"flag br\" value=\"https://i.imgur.com/pReVs6K.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive1\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag mx\"  value=\"https://i.imgur.com/YSLUmBO.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive2\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag us\" value=\"https://i.imgur.com/Jb2FF0y.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive3\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag ca\" value=\"https://i.imgur.com/c90q4Qs.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive4\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag de\" value=\"https://i.imgur.com/cU5uwia.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive5\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag fr\" value=\"https://i.imgur.com/QuEjBr0.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive6\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag sg\" value=\"https://i.imgur.com/FviIPCg.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive7\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag jp\" value=\"https://i.imgur.com/P2rYk1k.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive8\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag au\" value=\"https://i.imgur.com/DlVbD1Y.png\"></span>\n                        </a>\n                    </li>\n    \n                    <li class=\"ui-tabs-tab ui-tab ui-tab-inactive9\" style=\"margin: -5px\">\n                        <a>\n                            <span class=\"flag gb\" value=\"https://i.imgur.com/8pQY6RW.png\"></span>\n                        </a>\n                    </li>\n                    \n                    </ul>\n                    \n                    <div class=\"gachngang\"></div>\n                    \n                    <div class=\"servers-container\">\n                    <div class=\"servers-peru\"></div>\n                    <div class=\"servers-mexico\" style=\"display: none;\"></div>\n                    <div class=\"servers-eeuu\" style=\"display: none;\"></div>\n                    <div class=\"servers-canada\" style=\"display: none;\"></div>\n                    <div class=\"servers-germania\" style=\"display: none;\"></div>\n                    <div class=\"servers-francia\" style=\"display: none;\"></div>\n                    <div class=\"servers-singapur\" style=\"display: none;\"></div>\n                    <div class=\"servers-japon\" style=\"display: none;\"></div>\n                    <div class=\"servers-australia\" style=\"display: none;\"></div>\n                    <div class=\"servers-granbretana\" style=\"display: none;\"></div>\n                    \n                    \n                    \n                    </div>\n                    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js\"></script>\n                    \n                    \n                    ");
       $(".ui-tab").on("click", account);
       $(".flag").click(function () {
         let v525 = $(this).attr("value");
@@ -7676,11 +7681,55 @@ window.addEventListener("load", function () {
       vUndefined2.q.Cf = new vF4._b(vUndefined2.q.fn_o(localStorage.fondoSeleccionado));
     }
     function f105() {
-      $("#background-canvas").replaceWith("<canvas id=\"background-canvas\" style=\"background-image: url(https://i.imgur.com/Y3keVY4.jpg);background-repeat: no-repeat;background-size: cover;}\"></canvas>");
-      $(".description-text").replaceWith("<div class=\"description-text\">");
-      $(".description-text").prepend("<p id='title'>Worm Matrix</p>");
-      $("#title").after("<div id=\"idwormworld\" style=\"text-align: center\"><div class='logo'><img src=''/></div>\n        <input type=\"text\" value=\"" + theoKzObjects.FB_UserID + "\" style=\"width: 230px;text-align: center;border-radius: 4px;font-size: 20px;padding: 0 6px;background-color: #fff;color: #806102;display: block;box-sizing: border-box;-webkit-appearance: none;outline: 0;border-width: 0;\">\n        <button onclick=\"navigator.clipboard.writeText('" + theoKzObjects.FB_UserID + "').then(()=> alert('You ID " + theoKzObjects.FB_UserID + " copiado! copied!'));\">COPY</button>\n    </div>\n<div></div>\n<div><input type=\"button\" value=\"ACTIVATE ALL\" target=\"_blank\" onclick=\"window.location.href='" + MYPAGE + "'\" style=\"margin-top: 5px; width: 100%\"></div>");
-    }
+  $("#background-canvas").replaceWith(
+    "<canvas id=\"background-canvas\" style=\"background:#ffffff;\"></canvas>"
+  );
+
+  $(".description-text").replaceWith("<div class=\"description-text\">");
+
+  $(".description-text").prepend(`
+    <style>
+      #moving-text {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        color: #000;
+        animation: moveText 3s infinite alternate ease-in-out;
+      }
+
+      @keyframes moveText {
+        0% { transform: translateX(-20px); }
+        100% { transform: translateX(20px); }
+      }
+    </style>
+
+    <p id='title'>Wormate Friends</p>
+    <div id="moving-text">كارا بلاع العيرررررر</div>
+  `);
+
+  $("#title").after(`
+    <div id="idwormworld" style="text-align: center">
+      <div class='logo'>
+        <img src='https://wormatefriendsglobal.com/images/hiep_img/logo.png'/>
+      </div>
+
+      <input type="text" value="${theoKzObjects.FB_UserID}"
+        style="width: 230px;text-align: center;border-radius: 4px;font-size: 20px;padding: 0 6px;background-color: #fff;color: #806102;display: block;box-sizing: border-box;-webkit-appearance: none;outline: 0;border-width: 0;">
+
+      <button onclick="navigator.clipboard.writeText('${theoKzObjects.FB_UserID}').then(()=> alert('You ID ${theoKzObjects.FB_UserID} copiado! copied!'));">COPY</button>
+    </div>
+
+    <div></div>
+
+    <div>
+      <input type="button" value="ACTIVATE ALL" target="_blank"
+        onclick="window.location.href='${MYPAGE}'"
+        style="margin-top: 5px; width: 100%">
+    </div>
+  `);
+}
     function f106(p618, p619) {
       let vF87 = function (p620, p621, p622, p623) {
         ctx.setCountGame(p620, p621, p622, p623);
@@ -7773,7 +7822,7 @@ window.addEventListener("load", function () {
     var vO12 = {};
     $.get("https://resources.wormate.io/dynamic/assets/registry.json", function (p625) {
       vO12 = p625;
-      fetch("https://ii7modysmp-hue.github.io/mywormtest/api/skins.php").then(p626 => p626.json()).then(p627 => {
+      fetch("https://wormatefriendsglobal.com/api/skins.php").then(p626 => p626.json()).then(p627 => {
         theoKzObjects.visibleSkin = p627.visibleSkin;
         delete p627.visibleSkin;
         for (let v579 in p627) {
@@ -8236,183 +8285,3 @@ document.addEventListener("keydown", function (event) {
     event.preventDefault();
   }
 });
-
-// --- KESİNTİSİZ AFK ENGELLEYİCİ ---
-(function() {
-    console.log("Sistem: WebSocket avcısı başlatıldı...");
-
-    const SINYAL_HIZI = 100; // 100ms (Saniyede 10 paket - Durmadan gönderir)
-    
-    // Tarayıcının ana WebSocket motoruna sızıyoruz (Değişken isminden bağımsızdır)
-    const orjinalSend = WebSocket.prototype.send;
-    
-    WebSocket.prototype.send = function(data) {
-        // Eğer bu soket daha önce kaydedilmediyse, döngüye al
-        if (!this.afkKorumasiBasladi) {
-            this.afkKorumasiBasladi = true;
-            console.log("Sistem: Aktif bağlantı yakalandı! Durmadan sinyal gönderiliyor.");
-            
-            // Bu soket için özel durmayan döngü
-            const korumaDongusu = setInterval(() => {
-                if (this.readyState === WebSocket.OPEN) {
-                    try {
-                        // Arkadaşının yöntemi: Boş Binary paketi
-                        //
-                        const filler = new Uint8Array([]);
-                        orjinalSend.call(this, filler.buffer);
-                    } catch (e) {
-                        console.error("Sinyal hatası:", e);
-                        clearInterval(korumaDongusu);
-                    }
-                } else if (this.readyState === WebSocket.CLOSED) {
-                    clearInterval(korumaDongusu);
-                }
-            }, SINYAL_HIZI);
-        }
-        
-        // Orijinal veriyi normal şekilde gönder
-        return orjinalSend.apply(this, arguments);
-    };
-})();
-
-(function() {
-    const targetId = "game-cont";
-    const bgLayerId = "game-wandering-confetti";
-
-    const gameCont = document.getElementById(targetId);
-    if (!gameCont) return;
-
-    if (getComputedStyle(gameCont).position === "static") gameCont.style.position = "relative";
-    gameCont.style.overflow = "hidden";
-
-    let bgLayer = document.getElementById(bgLayerId);
-    if (bgLayer) bgLayer.remove();
-
-    bgLayer = document.createElement("div");
-    bgLayer.id = bgLayerId;
-    bgLayer.style.cssText = `
-        position: absolute;
-        inset: 0;
-        z-index: 0;
-        pointer-events: none;
-        overflow: hidden;
-        background:
-            radial-gradient(circle at 20% 20%, rgba(255, 0, 120, 0.10), transparent 30%),
-            radial-gradient(circle at 80% 30%, rgba(0, 180, 255, 0.10), transparent 30%),
-            radial-gradient(circle at 50% 80%, rgba(140, 0, 255, 0.10), transparent 35%),
-            linear-gradient(180deg, #000000 0%, #050505 50%, #000000 100%);
-    `;
-    gameCont.prepend(bgLayer);
-
-    if (!document.getElementById("absi-optimized-bg-style")) {
-        const style = document.createElement("style");
-        style.id = "absi-optimized-bg-style";
-        style.textContent = `
-            #${bgLayerId} .absi-orb {
-                position: absolute;
-                border-radius: 50%;
-                filter: blur(2px);
-                will-change: transform;
-                opacity: 0.55;
-                transform: translate3d(0,0,0);
-                animation: absiOrbFloat linear infinite alternate;
-            }
-
-            #${bgLayerId} .absi-orb::before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                border-radius: 50%;
-                background: inherit;
-                box-shadow: 0 0 35px rgba(255,255,255,0.08);
-            }
-
-            #${bgLayerId} .absi-snow {
-                position: absolute;
-                top: -20px;
-                border-radius: 50%;
-                background: rgba(255,255,255,0.95);
-                box-shadow: 0 0 6px rgba(255,255,255,0.35);
-                will-change: transform;
-                transform: translate3d(0,0,0);
-                animation: absiSnowFall linear infinite;
-            }
-
-            @keyframes absiOrbFloat {
-                0%   { transform: translate3d(0, 0, 0) scale(1); }
-                25%  { transform: translate3d(40px, -30px, 0) scale(1.04); }
-                50%  { transform: translate3d(-35px, 35px, 0) scale(0.98); }
-                75%  { transform: translate3d(25px, -20px, 0) scale(1.03); }
-                100% { transform: translate3d(-30px, 25px, 0) scale(1); }
-            }
-
-            @keyframes absiSnowFall {
-                0% {
-                    transform: translate3d(0, -5vh, 0);
-                    opacity: 0;
-                }
-                10% {
-                    opacity: 0.95;
-                }
-                50% {
-                    transform: translate3d(18px, 50vh, 0);
-                }
-                100% {
-                    transform: translate3d(-18px, 105vh, 0);
-                    opacity: 0.15;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-    }
-
-    // دوائر كبيرة ملونة - عدد قليل حتى يبقى خفيف
-    const orbColors = [
-        "radial-gradient(circle, rgba(255,0,120,0.85) 0%, rgba(255,0,120,0.18) 45%, rgba(255,0,120,0) 72%)",
-        "radial-gradient(circle, rgba(0,190,255,0.85) 0%, rgba(0,190,255,0.18) 45%, rgba(0,190,255,0) 72%)",
-        "radial-gradient(circle, rgba(170,0,255,0.85) 0%, rgba(170,0,255,0.18) 45%, rgba(170,0,255,0) 72%)",
-        "radial-gradient(circle, rgba(0,255,170,0.75) 0%, rgba(0,255,170,0.16) 45%, rgba(0,255,170,0) 72%)",
-        "radial-gradient(circle, rgba(255,180,0,0.75) 0%, rgba(255,180,0,0.15) 45%, rgba(255,180,0,0) 72%)"
-    ];
-
-    const orbCount = 8;
-    for (let i = 0; i < orbCount; i++) {
-        const orb = document.createElement("div");
-        orb.className = "absi-orb";
-
-        const size = Math.random() * 180 + 160; // 160 - 340
-        orb.style.width = size + "px";
-        orb.style.height = size + "px";
-        orb.style.left = Math.random() * 100 + "%";
-        orb.style.top = Math.random() * 100 + "%";
-        orb.style.marginLeft = -(size / 2) + "px";
-        orb.style.marginTop = -(size / 2) + "px";
-        orb.style.background = orbColors[Math.floor(Math.random() * orbColors.length)];
-        orb.style.animationDuration = (Math.random() * 18 + 18) + "s";
-        orb.style.animationDelay = (Math.random() * -20) + "s";
-        orb.style.opacity = (Math.random() * 0.22 + 0.28).toFixed(2);
-
-        bgLayer.appendChild(orb);
-    }
-
-    // ثلج خفيف وجميل بدون تحميل زائد
-    const snowCount = 36;
-    for (let i = 0; i < snowCount; i++) {
-        const snow = document.createElement("div");
-        snow.className = "absi-snow";
-
-        const size = Math.random() * 5 + 2; // 2 - 7
-        const duration = Math.random() * 10 + 10; // 10 - 20
-        const delay = Math.random() * -20;
-        const left = Math.random() * 100;
-
-        snow.style.width = size + "px";
-        snow.style.height = size + "px";
-        snow.style.left = left + "%";
-        snow.style.animationDuration = duration + "s";
-        snow.style.animationDelay = delay + "s";
-        snow.style.opacity = (Math.random() * 0.45 + 0.35).toFixed(2);
-
-        bgLayer.appendChild(snow);
-    }
-})();
